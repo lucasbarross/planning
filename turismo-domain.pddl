@@ -1,6 +1,5 @@
 (define (domain recife)
   (:requirements [:strips] [:typing] )
-  ; entidade pode ser: Pessoa ou Bicicleta
   (:types pessoa bicicleta lugar )
   (:predicates 
    (adjWalk ?estacao - lugar ?atracao - lugar)

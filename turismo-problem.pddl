@@ -38,6 +38,8 @@
 		(canGetBike jose)
   )
   (:goal 
-  	(and (hasBeen joao banco-brasil) (hasBeen joao paco-alfandega) (hasBeen jose praca-republica) (hasBeen jose mercado) (hasBeen maria igreja) (hasBeen maria mercado))
+  	(and (hasBeen joao banco-brasil) (hasBeen joao paco-alfandega) (hasBeen jose praca-republica) (hasBeen jose mercado) (hasBeen maria igreja) (hasBeen maria mercado) 
+	  	 (not(withBike joao)) (not(withBike jose)) (not(withBike maria))
+	)
   )
 )
