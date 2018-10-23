@@ -33,9 +33,22 @@
 		(personAt maria bike-alfandega)
 		(personAt jose bike-apolo)
 
+		(isPonto igreja)
+		(isPonto praca-republica)
+		(isPonto mercado)
+		(isPonto paco-alfandega)
+		(isPonto banco-brasil)
+
 		(canGetBike joao)
 		(canGetBike maria)
 		(canGetBike jose)
+
+		(hasSubobjective joao)
+		(subobjective joao banco-brasil)
+
+		(hasToMeetSomeone jose mercado)
+		(hasToMeetSomeone maria mercado)
+		(hasToMeet jose maria mercado)
   )
   (:goal 
   	(and (hasBeen joao banco-brasil) (hasBeen joao paco-alfandega) (hasBeen jose praca-republica) (hasBeen jose mercado) (hasBeen maria igreja) (hasBeen maria mercado) 
