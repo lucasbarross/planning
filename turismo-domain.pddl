@@ -27,7 +27,7 @@
   (:action entregar-bicicleta
       :parameters (?quem - pessoa ?bicicleta - bicicleta ?onde - lugar)
       :precondition (and (withBike ?quem) (bikeAt ?bicicleta ?onde) (personAt ?quem ?onde) (hasBike ?quem ?bicicleta))
-      :effect (and (not (withBike ?quem)) (not (hasBike ?quem ?bicicleta)) (bikeAt ?bicicleta ?onde) (not (canGetBike ?quem)) (not ( expiredTime ?bicicleta) ))
+      :effect (and (not (withBike ?quem)) (not (hasBike ?quem ?bicicleta)) (not (canGetBike ?quem)) (not ( expiredTime ?bicicleta) ))
   )
   
   (:action esperar5min
